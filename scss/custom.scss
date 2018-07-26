@@ -1,0 +1,211 @@
+body {
+  //若使用 header_02 將背景變成黑色 影片較不會破圖
+  background-color: $black;
+}
+
+.header_02 {
+  .headerWrap {
+    // 調整敘述高度
+    // height: calc(568*0.9px + 305px - 31px); // visual + detail - triangle(30)
+    // @include screen(mMedium) {
+    //   height: calc(667*0.9px + 278px - 31px);
+    // }
+    // @include screen(mLarge) {
+    //   height: calc(736*0.9px + 277px - 31px);
+    // }
+    // @include screen(tb) {
+    //   height: calc(1024*0.9px + 295px - 31px);
+    // }
+    // @include screen(pcSmall) {
+    //   height: calc(768*0.9px + 180px - 31px);
+    // }
+    // @include screen(pcLarge) {
+    //   height: calc(900*0.9px + 180px - 31px);
+    // }
+    .visualBg {
+      //手機主視覺
+      //background-image: url('../img/visual_m.jpg');
+      //手機主視覺圖片位置置中
+      //background-position: center;
+      @include screen(tb) {
+        //平板主視覺
+        //background-image: url('../img/visual_tb.jpg');
+        //平板主視覺圖片位置置中
+        //background-position: center;
+      }
+    }
+    .parallax {
+      .videoWrapper {
+        .videoCover {
+          //影片斜線遮罩圖
+          display: none;
+        }
+      }
+    }
+    .parallaxContent {
+      @include screen(pcSmall) {
+        .title {
+          //桌機標題圖
+          background-image: none;
+          //桌機標題圖位置
+          // background-position: center 60%;
+        }
+      }
+    }
+    .detail {
+      .detailWrap {
+        //描述背景色
+        background-color: rgba(0, 0, 0, 1);
+        .txtBg {
+          // 調整敘述高度
+          // height: 305px; //equal to .detailWrap height
+          // @include screen(mMedium) {
+          //   height: 278px;
+          // }
+          // @include screen(mLarge) {
+          //   height: 277px;
+          // }
+          // @include screen(tb) {
+          //   height: 295px;
+          // }
+          // @include screen(pcSmall) {
+          //   height: 180px;
+          // }
+        }
+        .txtInner {
+          a.link {
+            //馬上閱讀背景色
+            background-color: rgba(179, 39, 45, 1);
+            //馬上閱讀背景色－滑過
+            &:hover {
+              background-color: rgba(179, 39, 45, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.list_04 {
+  //模板背景色
+  background-color: $black;
+  .layoutWrap {
+    .title {
+      // 上標題文字顏色
+      color: $white;
+      &:after {
+        // 上標題底線顏色
+        background-color: $white;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      color: $white;
+    }
+    .subTitleWrap {
+      .subTitle {
+        //描述文字顏色
+        color: $white;
+      }
+    }
+    .sliderWrap {
+      .slidesWrap {
+        ul.slides {
+          li {
+            .txtWrap {
+              a.txt {
+                //文字顏色
+                color: $white;
+                h3 {
+                  @include screen(pcLarge) {
+                    //文字滑過色塊
+                    @include linear-gradient(to right, transparent 50%, rgba(179,39,45,0.5) 50%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.social_01 {
+  //模板背景色
+  background-color: rgba(51,51,51,1);
+  @include screen(pcSmall) {
+    //模板背景色－桌機
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .articleWrap {
+    .txtWrap {
+      @include screen(pcSmall) {
+        //框線顏色
+        border: 1px solid rgba(179, 39, 45, 1);
+        margin-bottom: 100px;
+      }
+      .btnWrap {
+        a.btn {
+          //按鈕顏色
+          background-color: rgba(179, 39, 45, 1);
+          &:before {
+            //按鈕框線顏色
+            //border: 1px solid rgba(123,156,188,1);
+          }
+          .icon {
+            svg {
+              .st0 {
+                //按鈕facebook svg 顏色
+                //fill: rgba(123,156,188,1);
+              }
+            }
+          }
+          .icontext {
+            //按鈕文字顏色
+            //color: rgba(123,156,188,1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.social_02 {
+  //模板背景色
+  background-color: rgba(26,26,26,1);
+  .layoutWrap {
+    .title {
+      //上標題文字顏色
+      color: $white;
+      &:after {
+        //上標題底線顏色
+        background-color: $white;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      color: $white;
+    }
+    .subTitleWrap {
+      .subTitle {
+        //描述文字顏色
+        color: $white;
+      }
+    }
+  }
+}
+
+.footer_01 {
+  //背景色
+  background-color: #27F13D;
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+  li .material_btn {
+    //按鈕色
+    background-color: rgba(51,51,51,1);
+  }
+}
