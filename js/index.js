@@ -138,7 +138,7 @@
       hover menu li animation
       -------------------------------------
       */
-      $menuli = $nav.find('ul.menu >li');
+      $menuli = $nav.find('.menuWrap ul li');
       $menuli.hover(function() {
         clearTimeout($menuTimer);
         $menuli.not(this).stop(true, true).animate({ opacity: 0.5 }, 500);
