@@ -53,6 +53,11 @@
                 flex-direction:row;
             }
         }
+        a {
+            display: contents;
+            line-height: 0;
+            font-size: 0;
+        }
         .three {
             display: inline-flex;
             flex-direction: column;

@@ -450,7 +450,7 @@
           gallery: true,
           item: pcNum,
           loop: true,
-          thumbItem: 3,
+          thumbItem: 6,
           slideMargin: 0,
           galleryMargin: 10,
           thumbMargin: 15,

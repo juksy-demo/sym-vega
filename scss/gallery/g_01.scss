@@ -32,7 +32,7 @@
       padding: 0px $m_gap;
       font-size: 30px;
       line-height: 1.5em;
-      text-align: center;
+      text-align: left;
       font-weight: bold;
       color: $white;
       @include screen(tb) {}
@@ -48,13 +48,14 @@
       .subTitle {
         margin: 20px $m_gap 0 $m_gap;
         color: $white;
+        line-height: 1.5em;
+        text-align: left;
         @include screen(tb) {
           margin: 20px $tb_gap 0 $tb_gap;
         }
         @include screen(pcSmall) {
-          width: 65%;
+          width: 70%;
           margin: 20px auto 0 auto;
-          text-align: center;
         }
       }
     }
