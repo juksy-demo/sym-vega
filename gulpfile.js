@@ -62,9 +62,9 @@ gulp.task('make:scss',function(){
 gulp.task('uglify:css', ['make:scss'], function(){
 	return gulp.src([
 			'node_modules/animate.css/animate.css',
-			'css/plugin/lightslider/lightslider.css',
-			'css/plugin/photoswipe/photoswipe.css',
-			'css/plugin/photoswipe/default-skin.css',
+			'css/plugin/lightslider.css',
+			'css/plugin/photoswipe.css',
+			'css/plugin/default-skin.css',
 			'css/index.css'
 		])
 		.pipe(concat('app.min.css'))
