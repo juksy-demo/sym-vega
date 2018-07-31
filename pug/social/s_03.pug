@@ -1,9 +1,9 @@
 // social03
 section.social_03(data-menu='true')
     .border_wrap
-        h2.title 如何曬照拿獎品
-        .detail #潮我來 喊出自己的「潮客宣言」即日起至 8/31(四)止，完成以下指定步驟，就有機會獲得潮流選物！<br/>> 荷蘭dopper水瓶（不鏽鋼款）<br/>> SlapSeePro偏光太陽眼鏡（不挑色）<br/>> STAGE潮流隨身小包（不挑色） 
-
+        h2.title.hidemoblie 【宣示活動】- 如何曬照拿獎品
+        h2.title.showmoblie 【宣示活動】<br/>如何曬照拿獎品
+        .detail #潮我來 喊出自己的「潮客宣言」<br/>即日起至 8/31(四)止，完成以下指定步驟，就有機會獲得潮流選物！<br/>> 荷蘭dopper水瓶（不鏽鋼款）<br/>> SlapSeePro偏光太陽眼鏡（不挑色）<br/>> STAGE潮流隨身小包（不挑色）
         ul.list
             li.wow.custom_fadeinup
                 .neon
@@ -63,16 +63,21 @@ section.social_03(data-menu='true')
             h4 2.拍照
             span.itemTxt 加入指定 hashtag<br/>#sym #ootd #VEGA #潮我來<br/>並Tag SYM官方帳號@sym.taiwan
             h4 3.上傳IG
-            span.itemTxt 上傳至 Instagram<br/>(帳號需設定為「公開」)
-        .winlist
-            h2.title 得獎名單
-            p 第一波 7/10(三)~8/10(五)8/14(二) 得獎名單公佈 - 抽出40名
-            p 第二波 8/11(六)~8/31(五)9/4(二) 得獎名單公佈 - 抽出45名
-            button(disabled="disabled") 尚未抽獎<br>敬請期待
+            span.itemTxt 上傳至 Instagram<br/>(帳號需設定為「公開」)        
         // tagboard
-        h2.title.sec IG 潮客牆
+        h2.title.sec 宣示召集區
         div.tagboard-embed(tgb-embed-id="1746")
         <script src="https://static.tagboard.com/embed/assets/js/embed.js"></script>
-
-			
+        .winlist
+            h2.title 得獎名單
+            p <span>第一波</span> 7/10(三)~8/10(五)8/14(二) 得獎名單公佈 - 抽出40名
+            p <span>第二波</span> 8/11(六)~8/31(五)9/4(二) 得獎名單公佈 - 抽出45名
+            .button
+                .wrr
+                    p 第一波
+                    span 尚未公佈<br/>敬請期待
+            .button
+                .wrr
+                    p 第二波
+                    span 尚未公佈<br/>敬請期待
 // social03 end

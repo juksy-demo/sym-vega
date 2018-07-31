@@ -15,7 +15,7 @@ body {
 	text-align: justify;
 	overflow-x: hidden;
     @include screen(tb) {
-		font-size: 24px;
+		font-size: 18px;
 	}
 	@include screen(pcSmall) {
 		font-size: 18px;

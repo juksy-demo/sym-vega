@@ -39,7 +39,7 @@
           background-color: $white;
       }
       &.sec {
-        padding-top: 80px;
+        padding-top: 70px;
       }
     }
     .detail {
@@ -111,9 +111,9 @@
               }
             }
             h4.hidemoblie,
-            span.hidemoblie {
+            span.hidemoblie{
               display: none;
-            }
+            }            
             @include screen(tb) {
               h4.hidemoblie {
                 display: inline-block;
@@ -125,7 +125,7 @@
                 padding: 0 20px 0 0;
               }
               &:last-child {
-                padding: 0 20px 0 0;
+                padding: 0 0 0 20px;
               }
             }
             @include screen(pcSmall) {
@@ -174,33 +174,83 @@
       @include screen(tb) {
         display: none;
       }
-    }
+    }    
     .winlist {
       text-align: center;
       .title {
-        margin-top: 90px;
+        margin-top: 60px;
+        @include screen(tb) {
+          margin-top: 90px;
+        }
       }
-      p {
+      &>p {
         font-size: 16px;
         line-height: 2em;
         text-align: center;
         color: $white;
-      }
-      button {
-        margin: 20px 10px 10px 20px;
-        padding: 10px 20px;
-        border: 2px solid $white;
-        text-align: center;
-        overflow:hidden;
-        transition: .3s;
-        background-color: #000;
-        color: #fff;
-        font-size: 16px;
-        &[disabled="disabled"] {
-          background-color: #777;
-          color: #fff;
-          border: 2px solid $white;
+        span {
+          font-weight: bold;
         }
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 20px 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        overflow:hidden;
+        width: 120px;
+        height: 90px;
+        border: 2px dashed $white;
+        border-radius: 20px;
+        background-color: #000;
+        text-align: center;
+        transition: .3s;
+        &:nth-of-type(1) {
+          margin-right: 20px;
+        }        
+        @include screen(tb) {
+          width: 180px;
+          height: 140px;
+          border-radius: 40px;
+          margin: 20px;
+        }        
+        &.active {
+          border: 2px solid $green;
+          background: radial-gradient(circle, #00f329 -70%, transparent 100%);
+        }
+        p {
+          font-size: 20px;
+          line-height: 1.5em;
+          color: #fff;
+          @include screen(tb) {
+            font-size: 28px;
+          }
+        }
+        span {
+          font-size: 14px;
+          line-height: 1.5em;
+          color: #fff;
+          @include screen(tb) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    h2.title.hidemoblie {
+      display: none;
+    }
+    h2.title.showmoblie {
+      display: block;
+    }
+    @include screen(tb) {
+      h2.title.hidemoblie {
+        display: block;
+      }
+      h2.title.showmoblie {
+        display: none;
       }
     }
 

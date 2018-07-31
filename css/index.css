@@ -169,7 +169,7 @@ body {
   overflow-x: hidden; }
   @media screen and (min-width: 768px) {
     body {
-      font-size: 24px; } }
+      font-size: 18px; } }
   @media screen and (min-width: 1024px) {
     body {
       font-size: 18px; } }
@@ -2592,7 +2592,7 @@ a.nav_02_btn {
           margin: 20px 40px 0 40px; } }
       @media screen and (min-width: 1024px) {
         .gallery_01 .layoutWrap .subTitleWrap .subTitle {
-          width: 70%;
+          width: 66%;
           margin: 20px auto 0 auto; } }
   @media screen and (min-width: 1024px) {
     .gallery_01 .gallery_01_slider ul.lSSlide {
@@ -2919,7 +2919,7 @@ a.nav_02_btn {
       margin: 15px auto 10px auto;
       background-color: #fff; }
     .social_03 .title.sec {
-      padding-top: 80px; }
+      padding-top: 70px; }
   .social_03 .detail {
     margin: 25px auto 25px auto;
     padding: 0;
@@ -2996,7 +2996,7 @@ a.nav_02_btn {
         .social_03 ul.list li:first-child {
           padding: 0 20px 0 0; }
         .social_03 ul.list li:last-child {
-          padding: 0 20px 0 0; } }
+          padding: 0 0 0 20px; } }
       @media screen and (min-width: 1024px) {
         .social_03 ul.list li:first-child {
           padding: 0 30px 0 0; }
@@ -3037,26 +3037,69 @@ a.nav_02_btn {
   .social_03 .winlist {
     text-align: center; }
     .social_03 .winlist .title {
-      margin-top: 90px; }
-    .social_03 .winlist p {
+      margin-top: 60px; }
+      @media screen and (min-width: 768px) {
+        .social_03 .winlist .title {
+          margin-top: 90px; } }
+    .social_03 .winlist > p {
       font-size: 16px;
       line-height: 2em;
       text-align: center;
       color: #fff; }
-    .social_03 .winlist button {
-      margin: 20px 10px 10px 20px;
+      .social_03 .winlist > p span {
+        font-weight: bold; }
+    .social_03 .winlist .button {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 20px 0;
       padding: 10px 20px;
-      border: 2px solid #fff;
-      text-align: center;
+      box-sizing: border-box;
       overflow: hidden;
-      transition: .3s;
+      width: 120px;
+      height: 90px;
+      border: 2px dashed #fff;
+      border-radius: 20px;
       background-color: #000;
-      color: #fff;
-      font-size: 16px; }
-      .social_03 .winlist button[disabled="disabled"] {
-        background-color: #777;
-        color: #fff;
-        border: 2px solid #fff; }
+      text-align: center;
+      transition: .3s; }
+      .social_03 .winlist .button:nth-of-type(1) {
+        margin-right: 20px; }
+      @media screen and (min-width: 768px) {
+        .social_03 .winlist .button {
+          width: 180px;
+          height: 140px;
+          border-radius: 40px;
+          margin: 20px; } }
+      .social_03 .winlist .button.active {
+        border: 2px solid #00f329;
+        background: radial-gradient(circle, #00f329 -70%, transparent 100%); }
+      .social_03 .winlist .button p {
+        font-size: 20px;
+        line-height: 1.5em;
+        color: #fff; }
+        @media screen and (min-width: 768px) {
+          .social_03 .winlist .button p {
+            font-size: 28px; } }
+      .social_03 .winlist .button span {
+        font-size: 14px;
+        line-height: 1.5em;
+        color: #fff; }
+        @media screen and (min-width: 768px) {
+          .social_03 .winlist .button span {
+            font-size: 16px; } }
+  .social_03 h2.title.hidemoblie {
+    display: none; }
+  .social_03 h2.title.showmoblie {
+    display: block; }
+  @media screen and (min-width: 768px) {
+    .social_03 h2.title.hidemoblie {
+      display: block; }
+    .social_03 h2.title.showmoblie {
+      display: none; } }
   .social_03 ul.list li:nth-child(1) .neon svg {
     animation: flicker1 2s linear infinite; }
   .social_03 ul.list li:nth-child(2) .neon svg {
