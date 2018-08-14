@@ -3058,6 +3058,7 @@ a.nav_02_btn {
       margin: 20px 0;
       padding: 10px 20px;
       box-sizing: border-box;
+      cursor: pointer;
       overflow: hidden;
       width: 120px;
       height: 90px;
@@ -3074,8 +3075,9 @@ a.nav_02_btn {
           height: 140px;
           border-radius: 40px;
           margin: 20px; } }
+      .social_03 .winlist .button.lot {
+        border: 2px solid #00f329; }
       .social_03 .winlist .button.active {
-        border: 2px solid #00f329;
         background: radial-gradient(circle, #00f329 -70%, transparent 100%); }
       .social_03 .winlist .button p {
         font-size: 20px;
@@ -3091,6 +3093,53 @@ a.nav_02_btn {
         @media screen and (min-width: 768px) {
           .social_03 .winlist .button span {
             font-size: 16px; } }
+    .social_03 .winlist .drawlist1 .a, .social_03 .winlist .drawlist1 .b, .social_03 .winlist .drawlist1 .c,
+    .social_03 .winlist .drawlist2 .a,
+    .social_03 .winlist .drawlist2 .b,
+    .social_03 .winlist .drawlist2 .c {
+      max-width: 660px;
+      margin: 0 auto 20px auto;
+      border: 2px solid #00f329;
+      border-radius: 20px;
+      color: #fff; }
+      @media screen and (min-width: 768px) {
+        .social_03 .winlist .drawlist1 .a, .social_03 .winlist .drawlist1 .b, .social_03 .winlist .drawlist1 .c,
+        .social_03 .winlist .drawlist2 .a,
+        .social_03 .winlist .drawlist2 .b,
+        .social_03 .winlist .drawlist2 .c {
+          margin: 0 auto 50px auto; } }
+      .social_03 .winlist .drawlist1 .a .top, .social_03 .winlist .drawlist1 .b .top, .social_03 .winlist .drawlist1 .c .top,
+      .social_03 .winlist .drawlist2 .a .top,
+      .social_03 .winlist .drawlist2 .b .top,
+      .social_03 .winlist .drawlist2 .c .top {
+        border-bottom: 2px solid #00f329;
+        padding: 15px; }
+      .social_03 .winlist .drawlist1 .a ol, .social_03 .winlist .drawlist1 .b ol, .social_03 .winlist .drawlist1 .c ol,
+      .social_03 .winlist .drawlist2 .a ol,
+      .social_03 .winlist .drawlist2 .b ol,
+      .social_03 .winlist .drawlist2 .c ol {
+        width: 100%;
+        list-style: none; }
+        .social_03 .winlist .drawlist1 .a ol li, .social_03 .winlist .drawlist1 .b ol li, .social_03 .winlist .drawlist1 .c ol li,
+        .social_03 .winlist .drawlist2 .a ol li,
+        .social_03 .winlist .drawlist2 .b ol li,
+        .social_03 .winlist .drawlist2 .c ol li {
+          display: block;
+          width: auto;
+          padding: 5px 0; }
+          @media screen and (min-width: 768px) {
+            .social_03 .winlist .drawlist1 .a ol li, .social_03 .winlist .drawlist1 .b ol li, .social_03 .winlist .drawlist1 .c ol li,
+            .social_03 .winlist .drawlist2 .a ol li,
+            .social_03 .winlist .drawlist2 .b ol li,
+            .social_03 .winlist .drawlist2 .c ol li {
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -ms-flex-pack: center;
+              justify-content: center;
+              width: 32%;
+              padding: 7px 0; } }
+    .social_03 .winlist .precautions {
+      color: #fff; }
   .social_03 h2.title.hidemoblie {
     display: none; }
   .social_03 h2.title.showmoblie {

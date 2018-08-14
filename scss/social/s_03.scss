@@ -200,6 +200,7 @@
         margin: 20px 0;
         padding: 10px 20px;
         box-sizing: border-box;
+        cursor: pointer;
         overflow:hidden;
         width: 120px;
         height: 90px;
@@ -217,8 +218,10 @@
           border-radius: 40px;
           margin: 20px;
         }        
-        &.active {
+        &.lot {
           border: 2px solid $green;
+        }
+        &.active {
           background: radial-gradient(circle, #00f329 -70%, transparent 100%);
         }
         p {
@@ -237,6 +240,41 @@
             font-size: 16px;
           }
         }
+      }
+      .drawlist1,
+      .drawlist2 {
+        .a, .b, .c {
+          max-width: 660px;
+          margin: 0 auto 20px auto;
+          border: 2px solid $green;
+          border-radius: 20px;
+          color: $white;
+          @include screen(tb) {
+            margin: 0 auto 50px auto;
+          }
+          .top {
+            border-bottom: 2px solid #00f329;
+            padding: 15px;
+          }
+          ol {
+            width: 100%;
+            list-style: none;
+            li {
+              display: block;
+              width: auto;
+              padding: 5px 0;
+              @include screen(tb) {
+                display: inline-flex;
+                justify-content: center;
+                width: 32%;
+                padding: 7px 0;
+              }
+            }
+          }
+        }
+      }
+      .precautions {
+        color: $white;
       }
     }
     h2.title.hidemoblie {
