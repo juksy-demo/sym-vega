@@ -576,7 +576,15 @@
     //social 03
     $('.winlist .button.one').click(function(){
       $('.winlist .button.one').toggleClass('active');
+      $('.winlist .button.two').removeClass('active');
       $('.drawlist1').toggle();
+      $('.drawlist2').css('display','none');
+    });
+    $('.winlist .button.two').click(function(){
+      $('.winlist .button.two').toggleClass('active');
+      $('.winlist .button.one').removeClass('active');
+      $('.drawlist2').toggle();
+      $('.drawlist1').css('display','none');
     });
   
     // fixedBtn
