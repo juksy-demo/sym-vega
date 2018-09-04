@@ -180,9 +180,6 @@
 
         $closeBtn.trigger('click');
         scrollPosition = offsetPosition - fixedNavHeight;
-        console.log(offsetPosition);
-        console.log(fixedNavHeight);
-        console.log(scrollPosition);
         $('html,body').animate({ scrollTop: scrollPosition }, 1000);
       }
     };

@@ -1,7 +1,6 @@
 .list_04 {
     position: relative;
     background-color: $black;
-    margin-top: 30px;
     .layoutWrap {
         @include screen(pcSmall) {
             margin: 0 auto;
